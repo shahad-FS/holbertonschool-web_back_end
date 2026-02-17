@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env
 
 """
 add function with arguments that supports typing
