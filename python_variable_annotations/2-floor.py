@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-unction floor which takes a float n as argument and returns the floor of the float.
+unction floor which takes a float n as argument and returns
+the floor of the float.
 """
 
 
