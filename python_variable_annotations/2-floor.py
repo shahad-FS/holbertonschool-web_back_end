@@ -4,6 +4,6 @@ unction floor which takes a float n as argument and returns the floor of the flo
 """
 
 
-def floor(n: float) -> float:
-    "return largest value"
+def floor(n: float) -> int:
+    "return largest int value"
     return int(n) if n >= 0 else int(n) - 1
