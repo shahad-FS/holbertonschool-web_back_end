@@ -6,5 +6,5 @@ returns the string representation of the float.
 
 
 def to_str(n: float) -> str:
-    """Retrun n as string represntation"
+    """Retrun n as string represntation"""
     return str(n)
