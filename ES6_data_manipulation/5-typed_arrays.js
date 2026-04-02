@@ -6,7 +6,7 @@ function createInt8TypedArray(length, position, value){
 		throw Error('Postion outside range');
 	}
 	
-	view.setInt8(postion, value);
+	view.setInt8(position, value);
 
 	return view;
 }
