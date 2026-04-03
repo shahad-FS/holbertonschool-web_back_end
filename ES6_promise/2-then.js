@@ -4,7 +4,8 @@ function handleResponseFromAPI(promise) {
       status: 200,
       body: 'success',
     }))
-    .catch(() => Error())
+    .catch(() => {
+	    throw new Error()})
     .finally(() => console.warn('Got a response from the API'));
 }
 
