@@ -5,8 +5,11 @@ function handleResponseFromAPI(promise) {
       body: 'success',
     }))
     .catch(() => {
-	    throw new Error()})
-    .finally(() => console.warn('Got a response from the API'));
+      return new Error();
+    })
+    .finally(() => {
+      console.warn('Got a response from the API');
+    });
 }
 
 export default handleResponseFromAPI;
