@@ -26,9 +26,8 @@ function readDatabase(path) {
 
       resolve(fields);
 
-      //   return fields;
     });
   });
-};
+}
 
 export default readDatabase;
