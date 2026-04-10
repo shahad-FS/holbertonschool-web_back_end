@@ -29,6 +29,6 @@ function readDatabase(path) {
       //   return fields;
     });
   });
-}
+};
 
 export default readDatabase;
