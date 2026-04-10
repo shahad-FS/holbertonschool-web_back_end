@@ -11,20 +11,15 @@ app.get("/", (req, res) => {
   res.send("Hello Holberton School!");
   });
 
-app.get('/students', (req, res) => {
-  res.send('This is the list of our students\n');
-  countStudents(DATABASE)
-    .then((data) => {
-        res.write(data);
-        res.end();
-    })
-  .catch((err) => {
-    res.write(err.message);
-    res.end();
-    });
+app.get('/students', async (req, res) => {
+  const msg = 'This is the list of our students\n';
+  try {
+    const students = await countStudents(DATABASE);
+    res.send(`${msg}${students.join('\n')}`);
+  } catch (error) {
+    res.send(`${msg}${error.message}`);
+  }
 });
-
-
 
 app.listen(port);
 
